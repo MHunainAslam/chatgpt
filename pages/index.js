@@ -28,7 +28,7 @@ export default function Home() {
     } catch (error) {
       // Consider implementing your own error handling logic here
       console.error(error.message);
-      // alert(error.message);
+      alert(error.message);
     }
   }
 
@@ -44,7 +44,7 @@ export default function Home() {
         <h3>Ask Me</h3>
         <form onSubmit={onSubmit}>
           <textarea
-          rows={1}
+          rows={5}
           className="ttarea"
             type="text"
             name="animal"

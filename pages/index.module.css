@@ -36,10 +36,15 @@
   color: #202123;
   margin: 16px 0 40px;
 }
+@media (max-width: 768px){
+.main form{
+  width: 75% !important; 
+}
+}
 .main form {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: 50%;
 }
 .main textarea[type="text"] {
   padding: 12px 16px;
