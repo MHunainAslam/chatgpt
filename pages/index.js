@@ -43,10 +43,12 @@ export default function Home() {
         {/* <img src="/dog.png" className={styles.icon} /> */}
         <h3>Ask Me</h3>
         <form onSubmit={onSubmit}>
-          <input
+          <textarea
+          rows={1}
+          className="ttarea"
             type="text"
             name="animal"
-            placeholder="Enter an animal"
+            placeholder="Ask Anything"
             value={animalInput}
             onChange={(e) => { setAnimalInput(e.target.value); }}
           />
